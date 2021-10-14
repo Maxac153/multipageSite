@@ -1,0 +1,170 @@
+:root{
+    --Roboto: 'Roboto', sans-serif;
+}
+
+/* Main */
+
+
+.intro{
+    width: 100%;
+    height: 450px;
+
+    background:
+    url('../images/about/background.png')
+    center
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro{
+    position: relative;
+}
+
+.intro__text{
+    position: absolute;           
+    top: 50%;                         
+    transform: translate(0, -50%) 
+}
+
+.intro__text h1{
+    color: #fff;
+    background-color: #000;
+    font-size: 48pt;
+    font-family: var(--Roboto);
+    padding: 0 30px;
+    margin-bottom: 40px;
+    font-weight: lighter;
+}
+
+.intro__text p{
+    font-size: 18pt;
+    font-family: var(--Roboto);
+    font-weight: 300;
+}
+
+.our_story{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    justify-content: center;
+}
+
+.our__story__text{
+    width: 45%;
+    padding-left: 40px;
+}
+
+.our_story img{
+    width: 100%;
+    height: auto;
+}
+
+.foto{
+    min-width: 55%;
+}
+
+.titel{
+    font-family: var(--Roboto);
+    font-size: 18pt;
+    font-weight: 350;
+    margin: 10px 0;
+}
+
+.text{
+    font-family: var(--Roboto);
+    font-size: 14pt;
+    color: #666;
+    font-weight: 300;
+    margin: 30px 0;
+    line-height: 1.5;
+}
+
+.suptitel{
+    font-family: var(--Roboto);
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.team{
+    margin: 75px 0;
+}
+
+.team__employees{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team__titel{
+    text-align: center;
+    font-size: 30pt;
+    font-family: var(--Roboto);
+    font-weight: 300;
+}
+
+.team__text{
+    max-width: 620px;
+    margin: 40px auto;
+    font-size: 13pt;
+    color: #666;
+    text-align: center;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.employee{
+    width: 30%;
+    min-width: 280px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 20px 15px;
+}
+
+.employee img{
+    width: 100%;
+    height: auto;
+}
+
+.employee__desc{
+    padding: 30px;
+}
+
+.employee__titel{
+    font-family: var(--Roboto);
+    font-size: 24pt;
+    font-weight: 400;
+}
+
+.employee__suptitel{
+    font-family: var(--Roboto);
+    font-size: 16pt;
+    margin: 10px 0 20px 0;
+    font-weight: 400;
+    color: #666;
+}
+
+.employee__text{
+    font-family: var(--Roboto);
+    font-size: 14pt;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.5;
+}
+
+@media(max-width: 980px){
+    .our__story__text{
+        width: 100%;
+        padding: 0 40px;
+    }
+}
+
+@media(max-width: 450px){
+    .our__story__text{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
